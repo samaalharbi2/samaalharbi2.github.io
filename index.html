@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sama Al-Harbi | Data Science Portfolio</title>
+    <title>Sama Al-Harbi | Data Science Engineer</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a2e00e6b5b.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a2e00e6b5b.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -19,47 +16,93 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- ===== Hero Section ===== -->
+    <!-- ===== Hero ===== -->
     <section id="hero">
-      <div class="hero-text">
-        <h1>I'm <span>Sama Al-Harbi</span></h1>
+      <div class="hero-content">
+        <h1>Hello, I'm <span class="highlight">Sama Al-Harbi</span></h1>
         <p>
-          A Computer Science graduate passionate about Data Science, Machine Learning,
-          and Natural Language Processing. I love transforming data into insights and
-          building intelligent solutions.
+          A <strong>Data Science Engineer</strong> passionate about AI, Machine Learning, and Data Analysis.  
+          I love transforming raw data into intelligent insights and deploying data-driven solutions.
         </p>
+        <a href="#projects" class="btn">Explore My Work</a>
       </div>
       <div class="hero-image">
         <img src="images/profile.jpg" alt="Sama Al-Harbi" />
       </div>
     </section>
 
-    <!-- ===== About Section ===== -->
+    <!-- ===== About ===== -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I'm a data enthusiast with strong analytical and problem-solving skills.  
-        I enjoy working with data pipelines, machine learning, and NLP models.
-        I’m always eager to learn and explore new technologies that make an impact.
+        I'm a Computer Science graduate passionate about Data Science, Machine Learning, and Natural Language Processing.  
+        I thrive on learning new technologies, solving real-world problems, and building impactful AI-powered systems.
       </p>
     </section>
 
-    <!-- ===== Skills Section ===== -->
+    <!-- ===== Skills ===== -->
     <section id="skills">
-      <h2>Top Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">Python for Data Analysis</div>
-        <div class="skill-card">SQL & Database Management</div>
-        <div class="skill-card">Natural Language Processing (NLP)</div>
-        <div class="skill-card">Statistical Modeling</div>
-        <div class="skill-card">Research & Problem Solving</div>
+      <h2>Technical Skills</h2>
+
+      <div class="skills-category">
+        <h3>🧠 AI / Machine Learning</h3>
+        <div class="skills-grid">
+          <div class="skill-card">TensorFlow</div>
+          <div class="skill-card">PyTorch</div>
+          <div class="skill-card">Scikit-learn</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>📊 Data Analysis</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Pandas</div>
+          <div class="skill-card">SQL</div>
+          <div class="skill-card">Power BI</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>⚙️ Deployment</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Streamlit</div>
+          <div class="skill-card">FastAPI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Employee Insights Dashboard" />
+          <div class="project-info">
+            <h3>Employee Insights Dashboard</h3>
+            <p>
+              Designed a dashboard to analyze employee performance and predict attrition using ML models and interactive visuals.
+            </p>
+            <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Customer Review Classification" />
+          <div class="project-info">
+            <h3>Customer Review Classification</h3>
+            <p>
+              NLP-based dashboard that classifies customer reviews as <strong>Recommended</strong> or <strong>Not Recommended</strong> using ML models.
+            </p>
+            <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -72,68 +115,22 @@
       </div>
     </section>
 
-    <!-- ===== Projects Section ===== -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card fade-in">
-          <img src="images/project1.jpg" alt="Employee Insights Dashboard" />
-          <div class="project-info">
-            <h3>Employee Insights Dashboard</h3>
-            <p>
-              Designed and developed a dashboard for monitoring employee performance
-              and predicting attrition risk using ML and data visualization.
-            </p>
-            <a
-              href="https://github.com/samaalharbi2/Employee_Insights_Panel"
-              target="_blank"
-              class="btn"
-              >View Project</a
-            >
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card fade-in">
-          <img src="images/project3.jpg" alt="Customer Review NLP Dashboard" />
-          <div class="project-info">
-            <h3>Customer Review Classification</h3>
-            <p>
-              An NLP-based project that analyzes product reviews and predicts
-              whether a product is <strong>Recommended</strong> or
-              <strong>Not Recommended</strong> using classification techniques.
-            </p>
-            <a
-              href="https://github.com/samaalharbi2/Customer-Review-Classification"
-              target="_blank"
-              class="btn"
-              >View Project</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ===== Contact ===== -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Let's connect and collaborate!</p>
+      <h2>Contact</h2>
+      <p>Let’s connect and build something intelligent together!</p>
       <div class="contact-links">
-        <a href="mailto:sama.alharbi@example.com"
-          ><i class="fa-solid fa-envelope"></i> sama.alharbi@example.com</a
-        >
-        <a href="https://linkedin.com/in/samaalharbi" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
-        >
+        <a href="mailto:sama.alharbi@example.com"><i class="fa-solid fa-envelope"></i> sama.alharbi@example.com</a>
+        <a href="https://linkedin.com/in/samaalharbi" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
       </div>
     </section>
 
     <!-- ===== Footer ===== -->
     <footer>
-      <p>© 2025 Sama Al-Harbi — All Rights Reserved</p>
+      <p>© 2025 Sama Al-Harbi — Data Science Engineer</p>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
+
