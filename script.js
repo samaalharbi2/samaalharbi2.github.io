@@ -1,2 +1,1 @@
-// إضافة رسالة ترحيب في الكونسول
-console.log("مرحبًا بك في موقع سما الحربي!");
+console.log("Welcome to Sama Al-Harbi’s Portfolio!");
