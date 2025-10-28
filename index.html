@@ -1,14 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
-    <meta charest="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> My portfolio </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سما الحربي | مهندسة بيانات</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <body>
+    <!-- ===== شريط التنقل ===== -->
+    <header>
+      <nav>
+        <h1>سما الحربي</h1>
+        <ul>
+          <li><a href="#about">من أنا</a></li>
+          <li><a href="#skills">المهارات</a></li>
+          <li><a href="#projects">المشاريع</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+    </header>
 
-</body>
+    <!-- ===== القسم التعريفي ===== -->
+    <section id="hero">
+      <div class="hero-text">
+        <h2>مرحبًا! أنا <span>سما الحربي</span></h2>
+        <p>مهندسة بيانات طموحة أعمل على تطوير مهاراتي في تحليل البيانات وبناء الأنظمة الذكية.</p>
+        <a href="#projects" class="btn">استعرض مشاريعي</a>
+      </div>
+      <div class="hero-img">
+        <img src="images/profile.jpg" alt="صورة سما الحربي" />
+      </div>
+    </section>
+
+    <!-- ===== من أنا ===== -->
+    <section id="about">
+      <h2>من أنا</h2>
+      <p>
+        أنا سما الحربي، خريجة <strong>علوم بيانات</strong> وأسعى لبناء مساري المهني كـ
+        <strong>مهندسة بيانات</strong>. أحب تحويل البيانات إلى معرفة قابلة للاستخدام وأهتم بالتقنيات الحديثة مثل
+        Python و SQL و Cloud Platforms.
+      </p>
+    </section>
+
+    <!-- ===== المهارات ===== -->
+    <section id="skills">
+      <h2>مهاراتي التقنية</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>ETL Pipelines</li>
+        <li>Data Visualization (Tableau / Power BI)</li>
+        <li>Cloud (AWS / GCP)</li>
+      </ul>
+    </section>
+
+    <!-- ===== المشاريع ===== -->
+    <section id="projects">
+      <h2>مشاريعي</h2>
+
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="مشروع تحليل البيانات" />
+        <h3>تحليل بيانات مبيعات</h3>
+        <p>مشروع بسيط لتحليل بيانات مبيعات باستخدام Python و Pandas لعرض أنماط الشراء.</p>
+        <a href="https://github.com/samaalharbi2/project1" target="_blank">عرض المشروع</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="مشروع تنظيف البيانات" />
+        <h3>تنظيف البيانات</h3>
+        <p>مشروع يوضح كيفية التعامل مع البيانات غير النظيفة وتجهيزها للتحليل.</p>
+        <a href="https://github.com/samaalharbi2/project2" target="_blank">عرض المشروع</a>
+      </div>
+    </section>
+
+    <!-- ===== تواصل ===== -->
+    <section id="contact">
+      <h2>تواصل معي</h2>
+      <p>يمكنك التواصل معي عبر البريد أو لينكدإن:</p>
+      <ul>
+        <li>📧 sama.alharbi@example.com</li>
+        <li>
+          💼
+          <a href="https://linkedin.com/in/samaalharbi" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 جميع الحقوق محفوظة - سما الحربي</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
