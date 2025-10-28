@@ -1,15 +1,16 @@
-/* إعدادات عامة */
+/* ===== Base Styles ===== */
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: #fafafa;
-  color: #333;
-  direction: rtl;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  direction: ltr;
+  line-height: 1.7;
 }
 
-/* شريط التنقل */
+/* ===== Navigation Bar ===== */
 header {
-  background-color: #4b0082;
+  background-color: #1e7e34;
   color: white;
   padding: 1rem 2rem;
 }
@@ -20,29 +21,36 @@ nav {
   align-items: center;
 }
 
+nav h1 {
+  font-size: 1.5rem;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-/* القسم الرئيسي */
+/* ===== Hero Section ===== */
 #hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 3rem 2rem;
-  background-color: #f0e6ff;
+  background-color: #c7eed8;
 }
 
 .hero-text {
@@ -50,37 +58,42 @@ nav a:hover {
 }
 
 .hero-text span {
-  color: #4b0082;
+  color: #1e7e34;
+  font-weight: 700;
 }
 
 .btn {
-  background-color: #4b0082;
+  background-color: #1e7e34;
   color: white;
   padding: 0.7rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .btn:hover {
-  background-color: #360061;
+  background-color: #155c26;
 }
 
 .hero-img img {
   width: 250px;
   border-radius: 50%;
+  border: 3px solid #1e7e34;
 }
 
-/* الأقسام */
+/* ===== Sections ===== */
 section {
   padding: 3rem 2rem;
   text-align: center;
 }
 
 h2 {
-  color: #4b0082;
+  color: #1e7e34;
   margin-bottom: 1.5rem;
 }
 
+/* ===== Skills ===== */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -89,19 +102,31 @@ h2 {
 }
 
 .skills-list li {
-  background-color: #e6d6ff;
+  background-color: #b2dfbf;
   padding: 0.7rem 1.2rem;
   border-radius: 10px;
+  font-weight: 500;
 }
 
-/* المشاريع */
+/* ===== Certifications ===== */
+.cert-card {
+  background-color: #82cbb2;
+  color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* ===== Projects ===== */
 .project-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: #f7f7f7;
+  border: 1px solid #b2dfbf;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem auto;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .project-card img {
@@ -109,10 +134,37 @@ h2 {
   border-radius: 10px;
 }
 
-/* الفوتر */
+.note {
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* ===== Contact ===== */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin: 0.5rem 0;
+}
+
+#contact a {
+  color: #1e7e34;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
 footer {
-  background-color: #4b0082;
+  background-color: #1e7e34;
   color: white;
   text-align: center;
   padding: 1rem;
 }
+
