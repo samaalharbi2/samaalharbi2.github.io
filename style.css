@@ -3,7 +3,7 @@
   --bg-card: #2F2F31;
   --text-light: #E5E5E7;
   --purple: #6A0DAD;
-  --neon: #00FFFF;
+  --accent: #604f71; /* البنفسجي الأنثوي الجديد */
   --shadow: #3A3A3C;
 }
 
@@ -34,7 +34,7 @@ header {
 .logo-text {
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--neon);
+  color: var(--accent);
 }
 
 .nav-links {
@@ -50,7 +50,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--neon);
+  color: var(--accent);
 }
 
 /* ===== Hero ===== */
@@ -70,29 +70,22 @@ header {
 }
 
 .hero-content .highlight {
-  color: var(--neon);
-}
-
-.hero-content h1 {
-  font-size: 2rem;
-}
-
-.hero-content p {
-  margin: 1rem 0;
+  color: var(--accent);
 }
 
 .hero-image img {
-  width: 220px;
-  border-radius: 50%;
-  border: 3px solid var(--neon);
-  box-shadow: 0 0 15px var(--neon);
+  width: 260px;
+  height: auto;
+  border-radius: 10px; /* ليست بيضاوية بعد الآن */
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 15px var(--accent);
 }
 
 /* ===== Buttons ===== */
 .btn {
   background-color: transparent;
-  color: var(--neon);
-  border: 1px solid var(--neon);
+  color: var(--accent);
+  border: 1px solid var(--accent);
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   transition: all 0.3s;
@@ -101,28 +94,12 @@ header {
 }
 
 .btn:hover {
-  background-color: var(--neon);
+  background-color: var(--accent);
   color: var(--bg-dark);
-  box-shadow: 0 0 12px var(--neon);
-}
-
-/* ===== Sections ===== */
-section {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-h2 {
-  color: var(--neon);
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  box-shadow: 0 0 12px var(--accent);
 }
 
 /* ===== Skills ===== */
-.skills-category {
-  margin-bottom: 2rem;
-}
-
 .skills-grid {
   display: flex;
   justify-content: center;
@@ -132,7 +109,6 @@ h2 {
 
 .skill-card {
   background-color: var(--bg-card);
-  color: var(--text-light);
   border: 1px solid var(--shadow);
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
@@ -140,8 +116,8 @@ h2 {
 }
 
 .skill-card:hover {
-  border-color: var(--neon);
-  box-shadow: 0 0 8px var(--neon);
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
 }
 
 /* ===== Projects ===== */
@@ -158,12 +134,12 @@ h2 {
   max-width: 380px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(96, 79, 113, 0.2);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--neon);
+  box-shadow: 0 0 15px var(--accent);
 }
 
 .project-card img {
@@ -178,28 +154,54 @@ h2 {
 }
 
 .project-info h3 {
-  color: var(--purple);
+  color: var(--accent);
+}
+
+/* ===== Education ===== */
+.edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--bg-card);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--shadow);
+  text-align: left;
+}
+
+.edu-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.edu-card h3 {
+  color: var(--accent);
+  margin: 0;
 }
 
 /* ===== Certifications ===== */
 .cert-card {
   background-color: var(--bg-card);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   max-width: 400px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
-  border-radius: 50px;
+  padding: 1.5rem;
+  border-radius: 12px;
   box-shadow: 0 0 8px var(--shadow);
 }
 
 .cert-logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border: 2px solid var(--neon);
+  border: 2px solid var(--accent);
 }
 
 /* ===== Contact ===== */
@@ -217,15 +219,13 @@ h2 {
 }
 
 .contact-links a:hover {
-  color: var(--neon);
+  color: var(--accent);
 }
 
 /* ===== Footer ===== */
 footer {
   background-color: var(--bg-card);
-  color: var(--text-light);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
 }
-
