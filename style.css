@@ -1,0 +1,118 @@
+/* إعدادات عامة */
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+  direction: rtl;
+}
+
+/* شريط التنقل */
+header {
+  background-color: #4b0082;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* القسم الرئيسي */
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #f0e6ff;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text span {
+  color: #4b0082;
+}
+
+.btn {
+  background-color: #4b0082;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #360061;
+}
+
+.hero-img img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* الأقسام */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #4b0082;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background-color: #e6d6ff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+}
+
+/* المشاريع */
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 400px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* الفوتر */
+footer {
+  background-color: #4b0082;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
