@@ -7,172 +7,95 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a2e00e6b5b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!-- ===== Navbar ===== -->
   <header>
     <nav class="navbar">
       <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero Section ===== -->
   <section id="hero" class="fade-in">
-    <div class="hero-content">
-      <h1 class="glow-text">Hi, I'm <span class="highlight">Sama Al-Harbi</span></h1>
-      <h2 class="subtitle">Data & Artificial Intelligence Specialist</h2>
-      <div class="philosophy">
-        <p><strong>Philosophy:</strong> Clean design meets intelligent functionality.</p>
-        <p><strong>Focus:</strong> Building AI-driven insights through data science & machine learning.</p>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/profile.jpg" alt="Sama Al-Harbi">
-    </div>
-  </section>
-
-  <!-- ===== Why Hire Me ===== -->
-  <section id="why-hire" class="fade-in">
-    <h2 class="glow-title">Why Hire Me?</h2>
-    <p class="why-intro">
-      <strong>A Foundation of Trust and Excellence</strong><br>
-      I am committed to delivering not just code, but value — solutions built on reliability, creativity, and measurable results.
-    </p>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <i class="fa-solid fa-lightbulb"></i>
-        <h3>Creative Problem Solving</h3>
-        <p>I design intelligent models that translate data into real-world impact.</p>
-      </div>
-
-      <div class="why-card">
-        <i class="fa-solid fa-robot"></i>
-        <h3>AI Expertise</h3>
-        <p>Skilled in machine learning, NLP, and deploying scalable data systems.</p>
-      </div>
-
-      <div class="why-card">
-        <i class="fa-solid fa-award"></i>
-        <h3>Excellence & Precision</h3>
-        <p>My work emphasizes clean design, accurate models, and meaningful outcomes.</p>
+    <div class="hero-inner">
+      <h1 class="intro-title">Hi, I'm <span class="glow-name">Sama Al-Harbi</span></h1>
+      <p class="hero-role">Data & Artificial Intelligence Specialist</p>
+      <div class="hero-line"></div>
+      <p class="hero-desc">
+        I turn complex data into intelligent solutions.<br>
+        Passionate about AI, machine learning, and building technology that learns and evolves.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== About ===== -->
+  <!-- ===== About Section ===== -->
   <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p>
-      A Computer Science graduate passionate about AI, Data Science, and innovative technologies.
-      I transform ideas into intelligent systems that empower decision-making and automation.
+    <p class="about-text">
+      A Computer Science graduate specializing in Data Science and AI.<br>
+      I design intelligent systems that empower decision-making, prediction, and automation.<br>
+      My approach blends <span class="highlight">creativity</span> with <span class="highlight">technical precision</span> — because data deserves art.
     </p>
   </section>
 
-  <!-- ===== Skills ===== -->
-  <section id="skills" class="fade-in">
-    <h2>Technical Skills</h2>
-
-    <div class="skills-category">
-      <h3>🧠 AI / Machine Learning</h3>
-      <div class="skills-grid">
-        <div class="skill-card">TensorFlow</div>
-        <div class="skill-card">PyTorch</div>
-        <div class="skill-card">Scikit-learn</div>
-        <div class="skill-card">Hugging Face</div>
-      </div>
-    </div>
-
-    <div class="skills-category">
-      <h3>📊 Data Analysis</h3>
-      <div class="skills-grid">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Pandas</div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">Power BI</div>
-      </div>
-    </div>
-
-    <div class="skills-category">
-      <h3>⚙️ Deployment & Tools</h3>
-      <div class="skills-grid">
-        <div class="skill-card">FastAPI</div>
-        <div class="skill-card">Streamlit</div>
-        <div class="skill-card">Docker</div>
-        <div class="skill-card">GitHub</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Projects ===== -->
+  <!-- ===== Projects Section ===== -->
   <section id="projects" class="fade-in">
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
         <img src="images/project1.jpg" alt="Employee Insights Dashboard">
         <div class="project-info">
           <h3>Employee Insights Dashboard</h3>
-          <p>Built a data visualization dashboard predicting employee attrition using ML models.</p>
-          <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" target="_blank" class="btn btn-primary">View Project</a>
+          <p>Interactive analytics dashboard predicting performance & attrition using ML.</p>
+          <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" target="_blank" class="btn btn-outline">View Project</a>
         </div>
       </div>
-
       <div class="project-card">
         <img src="images/project3.jpg" alt="Customer Review Classification">
         <div class="project-info">
           <h3>Customer Review Classification</h3>
-          <p>Developed NLP models to classify customer reviews with sentiment analysis techniques.</p>
-          <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank" class="btn btn-primary">View Project</a>
+          <p>NLP-based deep learning model classifying reviews with high accuracy.</p>
+          <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank" class="btn btn-outline">View Project</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Education (Timeline Style) ===== -->
+  <!-- ===== Education Section ===== -->
   <section id="education" class="fade-in">
-    <h2>Education</h2>
+    <h2>Education Timeline</h2>
     <div class="timeline">
       <div class="timeline-item">
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3>Udacity — Data Scientist Nanodegree</h3>
-          <p>Focused on ML, NLP, data pipelines, and model deployment.</p>
+          <p>Focus on ML, NLP, pipelines & real-world deployment.</p>
         </div>
-        <span class="timeline-dot"></span>
       </div>
-
       <div class="timeline-item">
+        <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3>Umm Al-Qura University — B.Sc. in Computer Science</h3>
-          <p>Graduated with honors. Developed multiple AI-integrated academic projects.</p>
+          <p>Graduated with honors. Developed AI-driven academic projects.</p>
         </div>
-        <span class="timeline-dot"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Certifications ===== -->
-  <section id="certifications" class="fade-in">
-    <h2>Certifications</h2>
-    <div class="cert-card">
-      <img src="images/azure_logo.png" alt="Azure AI Logo" class="cert-logo">
-      <div class="cert-info">
-        <p>Microsoft Certified: Azure AI Fundamentals</p>
-        <a href="images/AI 900 .pdf" target="_blank" class="btn btn-outline">View Certificate</a>
       </div>
     </div>
   </section>
 
   <!-- ===== Contact ===== -->
   <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>Let’s collaborate on data-driven and AI-powered solutions!</p>
+    <h2>Let’s Connect</h2>
+    <p>Open to collaborations, data projects, and AI innovation opportunities.</p>
     <div class="contact-links">
       <a href="mailto:sama.alharbi@example.com"><i class="fa-solid fa-envelope"></i> sama.alharbi@example.com</a>
       <a href="https://linkedin.com/in/samaalharbi" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
@@ -186,4 +109,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
