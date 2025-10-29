@@ -3,7 +3,7 @@
   --bg-card: #2F2F31;
   --text-light: #E5E5E7;
   --purple: #6A0DAD;
-  --accent: #604f71; /* البنفسجي الأنثوي */
+  --accent: #604f71;
   --shadow: #3A3A3C;
 }
 
@@ -14,6 +14,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-light);
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 /* ===== Navbar ===== */
@@ -26,7 +27,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: center; /* توسيط الأزرار */
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -40,7 +41,8 @@ header {
 .nav-links a {
   color: var(--text-light);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1rem;
   transition: color 0.3s;
 }
 
@@ -54,14 +56,24 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  gap: 3rem;
+  padding: 5rem 2rem;
   background: radial-gradient(circle at 50% 50%, #2F2F31, #1C1C1E);
   text-align: center;
 }
 
 .hero-content {
-  max-width: 550px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-content .highlight {
@@ -69,23 +81,23 @@ header {
 }
 
 .hero-image img {
-  width: 260px;
+  width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 3px solid var(--accent);
-  box-shadow: 0 0 15px var(--accent);
+  box-shadow: 0 0 20px var(--accent);
 }
 
 /* ===== Buttons ===== */
 .btn {
   background-color: transparent;
   color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  border: 2px solid var(--accent);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
   transition: all 0.3s;
   display: inline-block;
-  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -95,10 +107,23 @@ header {
 }
 
 /* ===== Headings ===== */
-h2, h3 {
+h2 {
   color: var(--accent);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 4rem 2rem;
 }
 
 /* ===== Skills ===== */
@@ -106,17 +131,19 @@ h2, h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .skill-card {
   background-color: var(--bg-card);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--shadow);
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
   text-align: center;
-  min-width: 120px;
+  min-width: 140px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 /* ===== Projects ===== */
@@ -124,60 +151,70 @@ h2, h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  gap: 2.5rem;
 }
 
 .project-card {
   background-color: var(--bg-card);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  max-width: 300px;
-  box-shadow: 0 0 12px var(--shadow);
-  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 0 15px var(--shadow);
+  text-align: left;
 }
 
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
 .project-info {
-  padding: 1rem;
+  padding: 1.2rem;
+}
+
+.project-info h3 {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* ===== Education ===== */
 .edu-card {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   background-color: var(--bg-card);
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--shadow);
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 750px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
 }
 
 .edu-logo {
-  width: 80px;
+  width: 90px;
   height: auto;
 }
 
 /* ===== Certifications ===== */
 .cert-card {
   text-align: center;
-  margin: 1rem auto;
-  max-width: 300px;
-  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 320px;
+  padding: 1.5rem;
   background-color: var(--bg-card);
-  border-radius: 8px;
-  box-shadow: 0 0 8px var(--shadow);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
 }
 
 .cert-logo {
-  width: 80px;
+  width: 90px;
   margin-bottom: 1rem;
 }
 
@@ -185,7 +222,7 @@ h2, h3 {
 .contact-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
@@ -193,7 +230,8 @@ h2, h3 {
 .contact-links a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .contact-links a:hover {
@@ -203,8 +241,8 @@ h2, h3 {
 /* ===== Footer ===== */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--bg-card);
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  margin-top: 3rem;
+  font-size: 1rem;
 }
