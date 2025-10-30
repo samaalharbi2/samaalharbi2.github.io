@@ -176,63 +176,56 @@ h2 {
   color: var(--accent);
 }
 
-/* ===== Why Hire Me Grid ===== */
-.why-intro {
+/* ===== Why Hire Me Section ===== */
+#whyhireme {
+  padding: 5rem 2rem;
+  background: #0F111A; /* Dark background */
   text-align: center;
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 2rem;
 }
 
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 كروت فوق و3 تحت */
-  gap: 1.5rem;
-}
-
-.why-card {
-  background: #fefefe;
-  padding: 1.5rem;
-  border-radius: 15px;
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.why-card h4 {
-  color: #6a0dad; /* لون أنيق وملهم */
+.section-title {
+  font-size: 2.5rem;
+  color: #7B5FFF; /* Primary AI Purple */
+  text-shadow: 0 0 10px #FFB86C, 0 0 20px #7B5FFF;
   margin-bottom: 0.5rem;
-  font-size: 1.15rem;
 }
 
-.why-card p {
-  color: #555;
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #E5E5E5;
+  margin-bottom: 3rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.hire-card {
+  background: #1C1F2A; /* Card background */
+  padding: 1.8rem 1.5rem;
+  border-radius: 15px;
+  color: #E5E5E5;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(123, 95, 255, 0.3);
+}
+
+.hire-card h3 {
+  color: #7B5FFF; /* AI purple for titles */
+  margin-bottom: 1rem;
+}
+
+.hire-card p {
+  font-size: 0.95rem;
   line-height: 1.5;
+  color: #E5E5E5;
 }
 
-/* تأثير الإشعاع عند المرور بالماوس */
-.why-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(106,13,173,0.15), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.why-card:hover::before {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.why-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(106,13,173,0.3);
+.hire-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
 }
 
 
