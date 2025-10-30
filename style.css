@@ -177,38 +177,64 @@ h2 {
 }
 
 /* ===== Why Hire Me Grid ===== */
+.why-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 كروت فوق و3 تحت */
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .why-card {
-  background: var(--bg-card);
+  background: #fefefe;
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 15px;
   text-align: left;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(106,13,173,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-card h4 {
+  color: #6a0dad; /* لون أنيق وملهم */
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.why-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* تأثير الإشعاع عند المرور بالماوس */
+.why-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(106,13,173,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.why-card:hover::before {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .why-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(106,13,173,0.3);
+  box-shadow: 0 10px 25px rgba(106,13,173,0.3);
 }
 
-.why-card h4 {
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-
-.why-subtitle {
-  text-align: center;
-  font-size: 1.3rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
 
 /* ===== Projects ===== */
 .projects-grid {
