@@ -179,6 +179,7 @@ h2 {
 /* ===== Why Hire Me Section ===== */
 #whyhireme {
   padding: 5rem 2rem;
+  background: #0F111A; /* Dark background */
   text-align: center;
 }
 
@@ -191,11 +192,9 @@ h2 {
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #FFD670; 
+  color: #E5E5E5;
   margin-bottom: 3rem;
-  font-weight: 500;
 }
-
 
 .cards-container {
   display: grid;
