@@ -192,9 +192,11 @@ h2 {
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #E5E5E5;
+  color: #FFD670; 
   margin-bottom: 3rem;
+  font-weight: 500;
 }
+
 
 .cards-container {
   display: grid;
