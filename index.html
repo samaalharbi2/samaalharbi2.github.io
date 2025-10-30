@@ -12,11 +12,12 @@
   <!-- ===== Navbar ===== -->
   <header>
     <nav class="navbar">
+      <h1 class="logo">Sama<span>AI</span></h1>
       <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#whyhireme">Why Hire Me?</a></li>
+        <li><a href="#whyhireme">Why Hire Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -24,31 +25,33 @@
     </nav>
   </header>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero Section ===== -->
   <section id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Sama Al-Harbi</span></h1>
-      <h2>Data & Artificial Intelligence Specialist</h2>
-      <p class="hero-text">
-        I transform data into intelligent insights, creating AI-driven solutions that empower decision-making and automation.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">Explore My Work</a>
-        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Sama Al-Harbi</span></h1>
+        <h2>Data & Artificial Intelligence Specialist</h2>
+        <p>I transform data into intelligent insights, creating AI-driven solutions that empower decision-making and automation.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/profile.jpg" alt="Sama Al-Harbi">
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Sama Al-Harbi">
+      </div>
     </div>
   </section>
 
-  <!-- ===== About Me ===== -->
+  <!-- ===== About ===== -->
   <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p>
-      I'm a Computer Science graduate passionate about AI, Data Science, and innovative technologies. 
-      I build intelligent systems that transform ideas into actionable insights.
-    </p>
+    <div class="about-container">
+      <p>
+        I'm a Computer Science graduate passionate about AI, Data Science, and innovative technologies.
+        I build intelligent systems that transform ideas into actionable insights.
+      </p>
+    </div>
   </section>
 
   <!-- ===== Skills ===== -->
@@ -75,15 +78,15 @@
     <h2>Education</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-img"><img src="images/udacity_logo.png" alt="Udacity Logo"></div>
-        <div class="timeline-content">
+        <img src="images/udacity_logo.png" alt="Udacity">
+        <div class="timeline-text">
           <h3>Udacity — Data Scientist Nanodegree</h3>
           <p>Focused on ML, NLP, data pipelines, and model deployment.</p>
         </div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-img"><img src="images/ummalqura_logo.png" alt="Umm Al-Qura University Logo"></div>
-        <div class="timeline-content">
+        <img src="images/ummalqura_logo.png" alt="Umm Al-Qura">
+        <div class="timeline-text">
           <h3>Umm Al-Qura University — B.Sc. in Computer Science</h3>
           <p>Graduated with honors. Built several AI-integrated academic projects.</p>
         </div>
@@ -92,10 +95,11 @@
   </section>
 
   <!-- ===== Why Hire Me ===== -->
-  <section id="whyhireme" class="fade-in">
-    <h2 class="glow">Why Hire Me?</h2>
-    <p class="highlight-text">
-      I deliver value through reliable, high-quality AI and Data solutions. I solve complex problems with data-driven insights and creative intelligence.
+  <section id="whyhireme" class="fade-in highlight-box">
+    <h2>Why Hire Me?</h2>
+    <p>
+      I deliver value through reliable, high-quality AI and Data solutions. 
+      I solve complex problems with data-driven insights and creative intelligence.
     </p>
   </section>
 
@@ -105,19 +109,15 @@
     <div class="projects-grid">
       <div class="project-card">
         <img src="images/project1.jpg" alt="Employee Insights Dashboard">
-        <div class="project-info">
-          <h3>Employee Insights Dashboard</h3>
-          <p>Interactive dashboard for tracking employee performance and predicting attrition using ML.</p>
-          <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" target="_blank" class="btn btn-outline">View Project</a>
-        </div>
+        <h3>Employee Insights Dashboard</h3>
+        <p>Interactive dashboard for tracking employee performance and predicting attrition using ML.</p>
+        <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" class="btn btn-outline" target="_blank">View Project</a>
       </div>
       <div class="project-card">
         <img src="images/project3.jpg" alt="Customer Review Classification">
-        <div class="project-info">
-          <h3>Customer Review Classification</h3>
-          <p>NLP-based classifier predicting whether a review is positive or negative using deep learning.</p>
-          <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank" class="btn btn-outline">View Project</a>
-        </div>
+        <h3>Customer Review Classification</h3>
+        <p>NLP-based classifier predicting whether a review is positive or negative using deep learning.</p>
+        <a href="https://github.com/samaalharbi2/Customer-Review-Classification" class="btn btn-outline" target="_blank">View Project</a>
       </div>
     </div>
   </section>
@@ -126,9 +126,11 @@
   <section id="certifications" class="fade-in">
     <h2>Certifications</h2>
     <div class="cert-card">
-      <img src="images/azure_logo.png" alt="Azure AI Logo">
-      <p>Microsoft Certified: Azure AI Fundamentals</p>
-      <a href="images/AI 900.pdf" target="_blank" class="btn btn-outline">View Certificate</a>
+      <img src="images/azure_logo.png" alt="Azure Logo">
+      <div class="cert-info">
+        <p>Microsoft Certified: Azure AI Fundamentals</p>
+        <a href="images/AI 900.pdf" target="_blank" class="btn btn-outline">View Certificate</a>
+      </div>
     </div>
   </section>
 
