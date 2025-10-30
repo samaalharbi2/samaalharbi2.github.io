@@ -8,55 +8,106 @@
   <script src="https://kit.fontawesome.com/a2e00e6b5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <!-- ===== Navbar ===== -->
   <header>
     <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#whyhireme">Why Hire Me?</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== Hero Section ===== -->
-  <section id="hero" class="fade-in">
-    <div class="hero-inner">
-      <h1 class="intro-title">Hi, I'm <span class="glow-name">Sama Al-Harbi</span></h1>
-      <p class="hero-role">Data & Artificial Intelligence Specialist</p>
-      <div class="hero-line"></div>
-      <p class="hero-desc">
-        I turn complex data into intelligent solutions.<br>
-        Passionate about AI, machine learning, and building technology that learns and evolves.
+  <!-- ===== Hero ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Sama Al-Harbi</span></h1>
+      <h2>Data & Artificial Intelligence Specialist</h2>
+      <p class="hero-text">
+        I transform data into intelligent insights, creating AI-driven solutions that empower decision-making and automation.
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Sama Al-Harbi">
+    </div>
+  </section>
+
+  <!-- ===== About Me ===== -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science graduate passionate about AI, Data Science, and innovative technologies. 
+      I build intelligent systems that transform ideas into actionable insights.
+    </p>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="fade-in">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">TensorFlow</div>
+      <div class="skill-card">PyTorch</div>
+      <div class="skill-card">Scikit-learn</div>
+      <div class="skill-card">Hugging Face</div>
+      <div class="skill-card">Pandas</div>
+      <div class="skill-card">Power BI</div>
+      <div class="skill-card">FastAPI</div>
+      <div class="skill-card">Streamlit</div>
+      <div class="skill-card">Docker</div>
+      <div class="skill-card">GitHub</div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-img"><img src="images/udacity_logo.png" alt="Udacity Logo"></div>
+        <div class="timeline-content">
+          <h3>Udacity — Data Scientist Nanodegree</h3>
+          <p>Focused on ML, NLP, data pipelines, and model deployment.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-img"><img src="images/ummalqura_logo.png" alt="Umm Al-Qura University Logo"></div>
+        <div class="timeline-content">
+          <h3>Umm Al-Qura University — B.Sc. in Computer Science</h3>
+          <p>Graduated with honors. Built several AI-integrated academic projects.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== About Section ===== -->
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p class="about-text">
-      A Computer Science graduate specializing in Data Science and AI.<br>
-      I design intelligent systems that empower decision-making, prediction, and automation.<br>
-      My approach blends <span class="highlight">creativity</span> with <span class="highlight">technical precision</span> — because data deserves art.
+  <!-- ===== Why Hire Me ===== -->
+  <section id="whyhireme" class="fade-in">
+    <h2 class="glow">Why Hire Me?</h2>
+    <p class="highlight-text">
+      I deliver value through reliable, high-quality AI and Data solutions. I solve complex problems with data-driven insights and creative intelligence.
     </p>
   </section>
 
-  <!-- ===== Projects Section ===== -->
+  <!-- ===== Projects ===== -->
   <section id="projects" class="fade-in">
-    <h2>Featured Projects</h2>
+    <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
         <img src="images/project1.jpg" alt="Employee Insights Dashboard">
         <div class="project-info">
           <h3>Employee Insights Dashboard</h3>
-          <p>Interactive analytics dashboard predicting performance & attrition using ML.</p>
+          <p>Interactive dashboard for tracking employee performance and predicting attrition using ML.</p>
           <a href="https://github.com/samaalharbi2/Employee_Insights_Panel" target="_blank" class="btn btn-outline">View Project</a>
         </div>
       </div>
@@ -64,44 +115,34 @@
         <img src="images/project3.jpg" alt="Customer Review Classification">
         <div class="project-info">
           <h3>Customer Review Classification</h3>
-          <p>NLP-based deep learning model classifying reviews with high accuracy.</p>
+          <p>NLP-based classifier predicting whether a review is positive or negative using deep learning.</p>
           <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank" class="btn btn-outline">View Project</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Education Section ===== -->
-  <section id="education" class="fade-in">
-    <h2>Education Timeline</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Udacity — Data Scientist Nanodegree</h3>
-          <p>Focus on ML, NLP, pipelines & real-world deployment.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Umm Al-Qura University — B.Sc. in Computer Science</h3>
-          <p>Graduated with honors. Developed AI-driven academic projects.</p>
-        </div>
-      </div>
+  <!-- ===== Certifications ===== -->
+  <section id="certifications" class="fade-in">
+    <h2>Certifications</h2>
+    <div class="cert-card">
+      <img src="images/azure_logo.png" alt="Azure AI Logo">
+      <p>Microsoft Certified: Azure AI Fundamentals</p>
+      <a href="images/AI 900.pdf" target="_blank" class="btn btn-outline">View Certificate</a>
     </div>
   </section>
 
   <!-- ===== Contact ===== -->
   <section id="contact" class="fade-in">
-    <h2>Let’s Connect</h2>
-    <p>Open to collaborations, data projects, and AI innovation opportunities.</p>
+    <h2>Contact</h2>
+    <p>Let’s connect and collaborate on AI-driven solutions!</p>
     <div class="contact-links">
       <a href="mailto:sama.alharbi@example.com"><i class="fa-solid fa-envelope"></i> sama.alharbi@example.com</a>
       <a href="https://linkedin.com/in/samaalharbi" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 Sama Al-Harbi — Data & AI Specialist</p>
   </footer>
