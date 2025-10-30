@@ -180,6 +180,7 @@ h2 {
 #whyhireme {
   padding: 5rem 2rem;
   background: #0F111A; /* Dark background */
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
