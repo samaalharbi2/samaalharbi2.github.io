@@ -1,4 +1,4 @@
-// Fade-in sections on scroll
+// Fade-in on scroll
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
@@ -9,7 +9,7 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
   entries.forEach(entry => {
     if(!entry.isIntersecting) return;
-    entry.target.classList.add('appear');
+    entry.target.style.animation = "fadeIn 1s forwards";
     appearOnScroll.unobserve(entry.target);
   });
 }, appearOptions);
