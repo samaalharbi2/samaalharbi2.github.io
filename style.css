@@ -1,13 +1,16 @@
+/* ===== Root Variables ===== */
 :root {
   --bg-dark: #1a141d;
+  --bg-card: #1C1F2A;
   --text-light: #a0a0a2;
   --primary: #886593;
   --secondary: #6f4683;
-  --highlight: #e23e64;
-  --accent: #e69d25;
+  --highlight: #e23e64;  /* اسم سما */
+  --accent: #e69d25;     /* عناوين الأقسام */
+  --purple: #7B5FFF;
 }
 
-
+/* ===== Global ===== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -16,6 +19,7 @@ body {
   scroll-behavior: smooth;
   line-height: 1.7;
 }
+
 /* ===== Global Moving Light (Tame Impala Glow) ===== */
 body::before {
   content: "";
@@ -37,7 +41,6 @@ section, header, footer {
   z-index: 1;
 }
 
-
 /* ===== Navbar ===== */
 header {
   background-color: var(--bg-card);
@@ -58,7 +61,7 @@ header {
   font-size: 1.5rem;
 }
 .logo span {
-  color: var(--purple);
+  color: var(--highlight);
 }
 
 .nav-links {
@@ -99,6 +102,9 @@ header {
 .hero-text h1 {
   font-size: 3rem;
   margin: 0;
+}
+.hero-text .highlight {
+  color: var(--highlight);
 }
 .hero-text h2 {
   font-size: 1.7rem;
@@ -149,16 +155,79 @@ section {
   max-width: 1100px;
   margin: auto;
 }
-h2 {
+h2, .section-title {
   text-align: center;
   font-size: 2.3rem;
   margin-bottom: 2rem;
+  color: var(--accent) !important;
+  text-shadow: none;
+}
+
+/* ===== Skills ===== */
+#skills {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.skills-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+}
+.skills-category {
+  margin-bottom: 3.5rem;
+}
+.skills-category h3 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.skill {
+  width: 85px;
+  height: 85px;
+  background: rgba(136,101,147,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(111,70,131,0.3);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.skill i {
+  font-size: 2rem;
+  color: var(--text-light);
+  transition: 0.3s ease;
+}
+.skill span {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(226,62,100,0.25);
+  box-shadow: 0 0 20px rgba(226,62,100,0.4);
+}
+.skill:hover i {
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--highlight);
+}
+.skill:hover span {
+  opacity: 1;
   color: var(--accent);
 }
 
-
-
-/* ===== Timeline ===== */
+/* ===== Education ===== */
 .timeline {
   display: flex;
   flex-direction: column;
@@ -168,9 +237,15 @@ h2 {
   display: flex;
   align-items: center;
   background: var(--bg-card);
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 15px;
+  padding: 1.8rem;
   gap: 1.5rem;
+  box-shadow: 0 0 10px rgba(123, 95, 255, 0.25);
+  transition: all 0.3s ease;
+}
+.timeline-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
 }
 .timeline-item img {
   width: 70px;
@@ -182,57 +257,38 @@ h2 {
   color: var(--accent);
 }
 
-/* ===== Why Hire Me Section ===== */
+/* ===== Why Hire Me ===== */
 #whyhireme {
   padding: 5rem 2rem;
   text-align: center;
 }
-
-.section-title {
-  font-size: 2.5rem;
-  color: #7B5FFF; /* Primary AI Purple */
-  text-shadow: 0 0 10px #FFB86C, 0 0 20px #7B5FFF;
-  margin-bottom: 0.5rem;
-}
-
 .section-subtitle {
   font-size: 1.2rem;
   color: #E5E5E5;
   margin-bottom: 3rem;
 }
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   justify-items: center;
 }
-
 .hire-card {
-  background: #1C1F2A; /* Card background */
+  background: var(--bg-card);
   padding: 1.8rem 1.5rem;
   border-radius: 15px;
   color: #E5E5E5;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(123, 95, 255, 0.3);
 }
-
 .hire-card h3 {
-  color: #7B5FFF; /* AI purple for titles */
+  color: #7B5FFF;
   margin-bottom: 1rem;
 }
-
-.hire-card p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #E5E5E5;
-}
-
 .hire-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
 }
-
 
 /* ===== Projects ===== */
 .projects-grid {
@@ -243,9 +299,13 @@ h2 {
 .project-card {
   background: var(--bg-card);
   border-radius: 15px;
-  padding-bottom: 1.5rem;
   overflow: hidden;
-  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(123, 95, 255, 0.25);
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
 }
 .project-card img {
   width: 100%;
@@ -258,10 +318,6 @@ h2 {
 }
 .project-card p {
   padding: 0 1rem 1rem;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px var(--purple);
 }
 
 /* ===== Certifications ===== */
@@ -319,77 +375,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}
-/* ===== Skills (Unified Style) ===== */
-#skills {
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.skills-subtitle {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  margin-bottom: 2.5rem;
-}
-
-.skills-category {
-  margin-bottom: 3.5rem;
-}
-
-.skills-category h3 {
-  color: var(--accent);
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.5px;
-}
-
-.skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.8rem;
-}
-
-.skill {
-  width: 85px;
-  height: 85px;
-  background: rgba(136,101,147,0.12);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 0 10px rgba(111,70,131,0.3);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.skill i {
-  font-size: 2rem;
-  color: var(--text-light);
-  transition: 0.3s ease;
-}
-
-.skill span {
-  position: absolute;
-  bottom: -25px;
-  font-size: 0.8rem;
-  color: var(--text-light);
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.skill:hover {
-  transform: translateY(-8px) scale(1.1);
-  background: rgba(226,62,100,0.25);
-  box-shadow: 0 0 20px rgba(226,62,100,0.4);
-}
-
-.skill:hover i {
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--highlight);
-}
-
-.skill:hover span {
-  opacity: 1;
-  color: var(--accent);
 }
