@@ -134,23 +134,7 @@ h2 {
   color: var(--accent);
 }
 
-/* ===== Skills ===== */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 1rem;
-}
-.skill-card {
-  background: var(--bg-card);
-  text-align: center;
-  padding: 1rem;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-.skill-card:hover {
-  box-shadow: 0 0 15px var(--purple);
-  transform: translateY(-5px);
-}
+
 
 /* ===== Timeline ===== */
 .timeline {
@@ -313,4 +297,96 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* ===== Skills Section (Tame Impala Style) ===== */
+#skills {
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #1a141d, #0f0d11);
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 5rem 2rem;
+}
+
+#skills::before {
+  content: "";
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(226,62,100,0.12), rgba(230,157,37,0.05), transparent 70%);
+  border-radius: 50%;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+
+.skills-subtitle {
+  text-align: center;
+  color: #a0a0a2;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.skills-category {
+  margin-bottom: 3.5rem;
+}
+
+.skills-category h3 {
+  text-align: center;
+  color: #e69d25;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.skill {
+  width: 85px;
+  height: 85px;
+  background: rgba(136,101,147,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(111,70,131,0.3);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.skill i {
+  font-size: 2rem;
+  color: #a0a0a2;
+  transition: 0.3s ease;
+}
+
+.skill span {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.8rem;
+  color: #a0a0a2;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(226,62,100,0.3);
+  box-shadow: 0 0 20px rgba(226,62,100,0.4);
+}
+
+.skill:hover i {
+  color: #e69d25;
+  text-shadow: 0 0 10px #e23e64;
+}
+
+.skill:hover span {
+  opacity: 1;
+  color: #e69d25;
 }
