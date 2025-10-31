@@ -315,7 +315,6 @@ footer {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(226,62,100,0.12), rgba(230,157,37,0.05), transparent 70%);
   border-radius: 50%;
   transition: 0.2s ease;
   pointer-events: none;
