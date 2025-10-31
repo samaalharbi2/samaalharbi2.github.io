@@ -17,13 +17,8 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
-// Mouse light effect for Skills section
+// Global Mouse Light Effect (Tame Impala Aesthetic)
 document.addEventListener("mousemove", (e) => {
-  const skills = document.querySelector("#skills");
-  if (!skills) return;
-  const rect = skills.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  skills.style.setProperty("--x", `${x}px`);
-  skills.style.setProperty("--y", `${y}px`);
+  document.body.style.setProperty("--x", `${e.clientX}px`);
+  document.body.style.setProperty("--y", `${e.clientY}px`);
 });
