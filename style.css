@@ -1,11 +1,12 @@
 :root {
-  --bg-dark: #1C1C1E;
-  --bg-card: #2F2F31;
-  --text-light: #E5E5E7;
-  --purple: #6A0DAD;
-  --accent: #9b59b6;
-  --shadow: rgba(0,0,0,0.2);
+  --bg-dark: #1a141d;
+  --text-light: #a0a0a2;
+  --primary: #886593;
+  --secondary: #6f4683;
+  --highlight: #e23e64;
+  --accent: #e69d25;
 }
+
 
 body {
   margin: 0;
@@ -15,6 +16,27 @@ body {
   scroll-behavior: smooth;
   line-height: 1.7;
 }
+/* ===== Global Moving Light (Tame Impala Glow) ===== */
+body::before {
+  content: "";
+  position: fixed;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(226,62,100,0.15), rgba(230,157,37,0.05), transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  transition: 0.25s ease;
+  z-index: 0;
+}
+
+section, header, footer {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* ===== Navbar ===== */
 header {
@@ -298,32 +320,15 @@ footer {
     transform: translateY(0);
   }
 }
-/* ===== Skills Section (Tame Impala Style) ===== */
+/* ===== Skills (Unified Style) ===== */
 #skills {
-  position: relative;
-  background: radial-gradient(circle at 50% 50%, #1a141d, #0f0d11);
-  border-radius: 25px;
-  overflow: hidden;
   padding: 5rem 2rem;
-}
-
-#skills::before {
-  content: "";
-  position: absolute;
-  top: var(--y, 50%);
-  left: var(--x, 50%);
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  transition: 0.2s ease;
-  pointer-events: none;
+  text-align: center;
 }
 
 .skills-subtitle {
-  text-align: center;
-  color: #a0a0a2;
   font-size: 1.1rem;
+  color: var(--text-light);
   margin-bottom: 2.5rem;
 }
 
@@ -332,8 +337,7 @@ footer {
 }
 
 .skills-category h3 {
-  text-align: center;
-  color: #e69d25;
+  color: var(--accent);
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
@@ -348,7 +352,7 @@ footer {
 .skill {
   width: 85px;
   height: 85px;
-  background: rgba(136,101,147,0.15);
+  background: rgba(136,101,147,0.12);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -361,7 +365,7 @@ footer {
 
 .skill i {
   font-size: 2rem;
-  color: #a0a0a2;
+  color: var(--text-light);
   transition: 0.3s ease;
 }
 
@@ -369,23 +373,23 @@ footer {
   position: absolute;
   bottom: -25px;
   font-size: 0.8rem;
-  color: #a0a0a2;
+  color: var(--text-light);
   opacity: 0;
   transition: 0.3s ease;
 }
 
 .skill:hover {
   transform: translateY(-8px) scale(1.1);
-  background: rgba(226,62,100,0.3);
+  background: rgba(226,62,100,0.25);
   box-shadow: 0 0 20px rgba(226,62,100,0.4);
 }
 
 .skill:hover i {
-  color: #e69d25;
-  text-shadow: 0 0 10px #e23e64;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--highlight);
 }
 
 .skill:hover span {
   opacity: 1;
-  color: #e69d25;
+  color: var(--accent);
 }
