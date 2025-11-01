@@ -130,8 +130,15 @@ backdrop-filter: blur(10px);
   border-right: 2px solid var(--highlight);
   padding-right: 2px;
   white-space: nowrap;
-  overflow: hidden;
+  animation: blink 0.8s steps(2, start) infinite;
 }
+
+@keyframes blink {
+  to {
+    border-color: transparent;
+  }
+}
+
 
 /* ===== Buttons ===== */
 .btn {
