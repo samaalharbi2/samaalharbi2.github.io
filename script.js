@@ -24,28 +24,17 @@ document.addEventListener("mousemove", (e) => {
   document.body.style.setProperty("--y", `${e.clientY}px`);
 });
 
-const nameText = "Sama Al-Harbi";
 const nameElement = document.getElementById("name");
+const fullName = nameElement.textContent;
+nameElement.textContent = ""; // نبدأ من فراغ
 let index = 0;
-let forward = true; 
 
-function typeWriterLoop() {
-  if (forward) {
-    nameElement.textContent += nameText.charAt(index);
+function typeName() {
+  if (index < fullName.length) {
+    nameElement.textContent += fullName.charAt(index);
     index++;
-    if (index === nameText.length) {
-      forward = false;
-      setTimeout(typeWriterLoop, 1000); 
-      return;
-    }
-  } else {
-    nameElement.textContent = nameText.substring(0, index - 1);
-    index--;
-    if (index === 0) {
-      forward = true;
-    }
+    setTimeout(typeName, 150); // سرعة الكتابة
   }
-  setTimeout(typeWriterLoop, 150); // سرعة الكتابة والمسح
 }
 
-typeWriterLoop();
+typeName();
