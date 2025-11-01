@@ -167,59 +167,18 @@ h2, .section-title {
 }
 
 /* ===== Skills ===== */
-#skills {
-  padding: 5rem 2rem;
-  text-align: center;
-}
-.skills-subtitle {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  margin-bottom: 2.5rem;
-}
-.skills-category {
-  margin-bottom: 3.5rem;
-}
-.skills-category h3 {
-  color: var(--accent);
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.5px;
-}
-.skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.8rem;
-}
-.skill {
-  width: 85px;
-  height: 85px;
-  background: rgba(136,101,147,0.12);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 0 10px rgba(111,70,131,0.3);
-  cursor: pointer;
+.skill img {
+  width: 40px;
+  height: 40px;
   transition: 0.3s ease;
+  filter: grayscale(100%) brightness(0.9);
 }
-.skill span {
-  position: absolute;
-  bottom: -25px;
-  font-size: 0.8rem;
-  color: var(--text-light);
-  opacity: 0;
-  transition: 0.3s ease;
+
+.skill:hover img {
+  filter: none;
+  transform: scale(1.1);
 }
-.skill:hover {
-  transform: translateY(-8px) scale(1.1);
-  background: rgba(226,62,100,0.25);
-  box-shadow: 0 0 20px rgba(226,62,100,0.4);
-}
-.skill:hover span {
-  opacity: 1;
-  color: var(--accent);
-}
+
 
 /* ===== Education ===== */
 .timeline {
