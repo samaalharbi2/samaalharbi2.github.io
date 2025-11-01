@@ -167,6 +167,28 @@ h2, .section-title {
 }
 
 /* ===== Skills ===== */
+/* ===== Skills ===== */
+#skills {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.skills-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+}
+
+.skills-category {
+  margin-bottom: 3.5rem;
+}
+
+.skills-category h3 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
 .skills-icons {
   display: flex;
   flex-wrap: wrap;
@@ -175,8 +197,8 @@ h2, .section-title {
 }
 
 .skill {
-  width: 90px;
-  height: 90px;
+  width: 85px;
+  height: 85px;
   background: rgba(136, 101, 147, 0.12);
   border-radius: 50%;
   display: flex;
@@ -188,6 +210,7 @@ h2, .section-title {
   transition: 0.3s ease;
 }
 
+/* بدلاً من .skill i */
 .skill img {
   width: 45px;
   height: 45px;
@@ -211,17 +234,17 @@ h2, .section-title {
   box-shadow: 0 0 20px rgba(226, 62, 100, 0.4);
 }
 
+/* تأثير الصورة عند المرور */
 .skill:hover img {
   filter: none;
   transform: scale(1.15);
 }
 
+/* ظهور الاسم */
 .skill:hover span {
   opacity: 1;
   color: var(--accent);
 }
-
-
 
 /* ===== Education ===== */
 .timeline {
