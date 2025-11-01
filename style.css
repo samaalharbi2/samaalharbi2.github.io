@@ -245,7 +245,14 @@ h2, .section-title {
   opacity: 1;
   color: var(--accent);
 }
-
+.skill img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: 0.3s ease;
+}
 /* ===== Education ===== */
 .timeline {
   display: flex;
