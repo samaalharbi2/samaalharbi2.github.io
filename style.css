@@ -116,10 +116,15 @@ backdrop-filter: blur(10px);
 }
 .hero-image img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 320px;   
+  height: 320px;  
   object-fit: cover;
-  box-shadow: 0 0 25px var(--purple);
+  box-shadow: 0 0 35px var(--purple); 
+  transition: transform 0.3s ease; 
+}
+
+.hero-image img:hover {
+  transform: scale(1.05); 
 }
 
 /* ===== Buttons ===== */
