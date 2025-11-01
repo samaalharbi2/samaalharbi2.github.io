@@ -203,11 +203,6 @@ h2, .section-title {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.skill i {
-  font-size: 2rem;
-  color: var(--text-light);
-  transition: 0.3s ease;
-}
 .skill span {
   position: absolute;
   bottom: -25px;
@@ -220,10 +215,6 @@ h2, .section-title {
   transform: translateY(-8px) scale(1.1);
   background: rgba(226,62,100,0.25);
   box-shadow: 0 0 20px rgba(226,62,100,0.4);
-}
-.skill:hover i {
-  color: var(--accent);
-  text-shadow: 0 0 10px var(--highlight);
 }
 .skill:hover span {
   opacity: 1;
