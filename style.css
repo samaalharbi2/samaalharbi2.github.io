@@ -126,6 +126,12 @@ backdrop-filter: blur(10px);
 .hero-image img:hover {
   transform: scale(1.05); 
 }
+.highlight {
+  border-right: 2px solid var(--highlight);
+  padding-right: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 /* ===== Buttons ===== */
 .btn {
