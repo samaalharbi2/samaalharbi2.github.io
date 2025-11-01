@@ -84,7 +84,8 @@ backdrop-filter: blur(10px);
   align-items: center;
   padding: 5rem 2rem;
   flex-wrap: wrap;
-  background: radial-gradient(circle at 50% 50%, #2f2f31, #1c1c1e);
+  background: linear-gradient(to bottom right, #2B1D33, #1E1624);
+
 }
 .hero-container {
   display: flex;
