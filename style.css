@@ -167,17 +167,60 @@ h2, .section-title {
 }
 
 /* ===== Skills ===== */
-.skill img {
-  width: 40px;
-  height: 40px;
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.skill {
+  width: 90px;
+  height: 90px;
+  background: rgba(136, 101, 147, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(111, 70, 131, 0.3);
+  cursor: pointer;
   transition: 0.3s ease;
+}
+
+.skill img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
   filter: grayscale(100%) brightness(0.9);
+  transition: 0.3s ease;
+}
+
+.skill span {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(226, 62, 100, 0.25);
+  box-shadow: 0 0 20px rgba(226, 62, 100, 0.4);
 }
 
 .skill:hover img {
   filter: none;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
+
+.skill:hover span {
+  opacity: 1;
+  color: var(--accent);
+}
+
 
 
 /* ===== Education ===== */
