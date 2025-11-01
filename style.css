@@ -80,7 +80,7 @@ backdrop-filter: blur(10px);
 /* ===== Hero ===== */
 #hero {
   width: 100%;
-  background: linear-gradient(to bottom right, #2B1D33, #1E1624);
+  background: none
   padding: 5rem 0;
 }
 .hero-container {
