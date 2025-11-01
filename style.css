@@ -79,27 +79,19 @@ backdrop-filter: blur(10px);
 
 /* ===== Hero ===== */
 #hero {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw; 
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-  flex-wrap: wrap;
+  width: 100%;
   background: linear-gradient(to bottom right, #2B1D33, #1E1624);
-
+  padding: 5rem 0;
 }
 .hero-container {
+  max-width: 1100px; 
+  margin: 0 auto;    
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  max-width: 1100px;
   gap: 3rem;
+  padding: 0 2rem; 
 }
 .hero-text {
   flex: 1;
