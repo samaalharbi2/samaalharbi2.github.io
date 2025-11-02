@@ -73,3 +73,25 @@ function eraseWord() {
 
 typeWord();
 
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // يمنع إعادة تحميل الصفحة
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        formMessage.style.display = 'block';
+        form.reset();
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    }).catch(error => {
+      alert('Oops! There was a problem submitting your form.');
+    });
+  });
