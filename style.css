@@ -443,7 +443,7 @@ h2, .section-title {
     max-width: 600px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: left; /* الفورم والعناوين على اليسار */
   }
 
   #contact h2 {
@@ -451,9 +451,10 @@ h2, .section-title {
     margin-bottom: 10px;
   }
 
-  #contact p {
-    font-size: 1rem;
+  .contact-text {
+    text-align: center; /* الجملة في الوسط */
     margin-bottom: 20px;
+    font-size: 1rem;
   }
 
   form label {
@@ -473,27 +474,31 @@ h2, .section-title {
     font-size: 1rem;
   }
 
-form button {
-    background-color: var(--highlight); /* بدل #7B5FFF استخدم نفس لون View Project */
+  /* زر الإرسال بالوسط ونفس لون View Project → */
+  .btn-container {
+    text-align: center; /* يخلي الزر في الوسط */
+  }
+
+  form button {
+    background-color: var(--highlight); /* نفس لون View Project → */
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-}
+  }
 
-form button:hover {
-    background-color: #c72d56; /* لون أغمق شوي عند hover */
-}
-
+  form button:hover {
+    background-color: #c72d56; /* لون أغمق عند hover */
+  }
 
   .contact-info p {
     margin: 5px 0;
   }
 
   .contact-info a {
-    color: #7B5FFF;
+    color: var(--highlight);
     text-decoration: none;
   }
 
