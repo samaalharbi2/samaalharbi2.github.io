@@ -43,16 +43,33 @@ typeName();
 
 
 // ===== Changing Text Animation =====
-const words = ["AI", "Data", "Insight", "Innovation","Creativity"];
-let i = 0;
-const textElement = document.getElementById("dynamic-text");
+const words = ["AI", "Data", "Insight", "Innovation", "Creativity"];
+const textElement = document.getElementById("dynamic-word"); 
+let wordIndex = 0;
+let charIndex = 0;
 
-setInterval(() => {
-  i = (i + 1) % words.length;
-  textElement.style.opacity = 0;
-  setTimeout(() => {
-    textElement.textContent = words[i];
-    textElement.style.opacity = 1;
-  }, 500);
-}, 2000);
+function typeWord() {
+  const currentWord = words[wordIndex];
+  if (charIndex < currentWord.length) {
+    textElement.textContent += currentWord.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWord, 150);
+  } else {
+    setTimeout(eraseWord, 1000); 
+  }
+}
+
+function eraseWord() {
+  const currentWord = words[wordIndex];
+  if (charIndex > 0) {
+    textElement.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseWord, 100);
+  } else {
+    wordIndex = (wordIndex + 1) % words.length; 
+    setTimeout(typeWord, 500);
+  }
+}
+
+typeWord();
 
