@@ -43,7 +43,7 @@ typeName();
 
 
 // ===== Changing Text Animation =====
-const words = ["AI", "Data", "Insight", "Innovation"];
+const words = ["AI", "Data", "Insight", "Innovation","Creativity"];
 let i = 0;
 const textElement = document.getElementById("dynamic-text");
 
