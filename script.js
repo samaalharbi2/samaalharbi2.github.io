@@ -53,9 +53,9 @@ function typeWord() {
   if (charIndex < currentWord.length) {
     textElement.textContent += currentWord.charAt(charIndex);
     charIndex++;
-    setTimeout(typeWord, 80);
+    setTimeout(typeWord, 600);
   } else {
-    setTimeout(eraseWord, 60); 
+    setTimeout(eraseWord, 300); 
   }
 }
 
