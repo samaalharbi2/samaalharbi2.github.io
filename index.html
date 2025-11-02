@@ -261,40 +261,37 @@ For me, technology isn’t just about code — it’s about curiosity, creativit
 
 
   <!-- ===== Contact ===== -->
-<!-- ===== Contact ===== -->
-<section id="contact" class="fade-in">
+
+  <!-- ===== Contact Section ===== -->
+<section id="contact">
   <h2>Contact Me</h2>
-  <p class="contact-text">Let’s connect and grow together.</p>
-
-  <div class="contact-links">
-    <a href="mailto:saamaaalharbi@gmail.com" class="contact-item">
-      <i class="fas fa-envelope"></i> saamaaalharbi@gmail.com
-    </a>
-
-    <a href="https://www.linkedin.com/in/sama-alharbi-831753201/" target="_blank" class="contact-item">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-
-    <a href="https://github.com/your-github" target="_blank" class="contact-item">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-  </div>
+  <p>Let’s connect and grow together.</p>
 
   <!-- Contact Form -->
-  <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpwokzor" method="POST">
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Your Name" required>
-    </div>
-    <div class="form-group">
-      <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    </div>
-    <button type="submit" class="btn-submit">Submit</button>
-    <p id="formMessage" style="display:none; color: #7B5FFF; margin-top: 10px;">Thank you! Your message has been sent.</p>
+  <form id="contactForm" action="https://formspree.io/f/mpwokzor" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+
+    <button type="submit">Submit</button> <p id="formMessage" style="display:none; color: #7B5FFF; margin-top: 10px;">Thank you! Your message has been sent.</p>
   </form>
+
+  
+<!-- Contact Info -->
+  <div class="contact-info" style="margin-top: 20px;">
+    <p>Or reach me via:</p>
+    <p>📧 Email: <a href="mailto:saamaaalharbi@gmail.com">saamaaalharbi@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">Your LinkedIn</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/your-github" target="_blank">Your GitHub</a></p>
+  </div>
 </section>
+
+
 
 
 
