@@ -362,36 +362,38 @@ h2, .section-title {
 /* ===== Certifications ===== */
 .certs-container {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .cert-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background: var(--bg-card);
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(123, 95, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  box-shadow: 0 0 15px rgba(123,95,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cert-card:hover {
-  transform: translateX(10px);
+  transform: translateY(-5px);
   box-shadow: 0 0 25px #7B5FFF, 0 0 15px #FFB86C;
 }
 
-/* ===== حجم اللوجو ===== */
 .cert-card img {
-  width: 100px;   /* تكبير اللوجو */
-  height: 100px;  /* نفس الطول للعرض */
-  object-fit: contain;
-  margin-right: 1.5rem;
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .cert-info p {
   margin: 0.2rem 0;
+  text-align: center;
   color: var(--text-light);
 }
 
@@ -399,7 +401,6 @@ h2, .section-title {
   font-size: 0.85rem;
   color: var(--accent);
 }
-
 /* ===== Footer ===== */
 footer {
   background: var(--bg-card);
