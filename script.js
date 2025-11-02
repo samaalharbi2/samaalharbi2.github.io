@@ -44,7 +44,7 @@ typeName();
 
 // ===== Changing Text Animation =====
 const words = ["AI", "Data", "Insight", "Innovation", "Creativity"];
-const textElement = document.getElementById("dynamic-word"); 
+const textElement = document.getElementById("dynamic-text");
 let wordIndex = 0;
 let charIndex = 0;
 
