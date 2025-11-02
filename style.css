@@ -362,43 +362,32 @@ h2, .section-title {
 /* ===== Certifications ===== */
 .certs-container {
   display: flex;
-  flex-direction: column; /* شهادات فوق بعض */
-  gap: 1.5rem; /* نفس المسافة بين timeline-item */
+  flex-direction: column;
+  gap: 1.5rem;
   margin-top: 2rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto; /* توسيط */
 }
 
 .cert-card {
   display: flex;
   align-items: center;
   background: var(--bg-card);
-  padding: 1.8rem; /* نفس padding timeline-item */
+  padding: 1rem 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(123, 95, 255, 0.25); /* نفس الظل */
+  box-shadow: 0 0 15px rgba(123, 95, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100px; /* تقريباً نفس ارتفاع timeline-item */
 }
 
 .cert-card:hover {
-  transform: translateY(-8px); /* نفس حركة hover */
-  box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
+  transform: translateX(10px);
+  box-shadow: 0 0 25px #7B5FFF, 0 0 15px #FFB86C;
 }
 
-.cert-logo {
-  width: 70px;
-  height: 70px; /* نفس حجم الصور في timeline-item */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1.5rem;
-}
-
-.cert-logo img {
-  max-width: 100%;
-  max-height: 100%;
+/* ===== حجم اللوجو ===== */
+.cert-card img {
+  width: 100px;   /* تكبير اللوجو */
+  height: 100px;  /* نفس الطول للعرض */
   object-fit: contain;
+  margin-right: 1.5rem;
 }
 
 .cert-info p {
