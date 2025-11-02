@@ -53,9 +53,9 @@ function typeWord() {
   if (charIndex < currentWord.length) {
     textElement.textContent += currentWord.charAt(charIndex);
     charIndex++;
-    setTimeout(typeWord, 600);
+    setTimeout(typeWord, 120);
   } else {
-    setTimeout(eraseWord, 300); 
+    setTimeout(eraseWord, 1000); 
   }
 }
 
@@ -64,10 +64,10 @@ function eraseWord() {
   if (charIndex > 0) {
     textElement.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
-    setTimeout(eraseWord, 600);
+    setTimeout(eraseWord, 60);
   } else {
     wordIndex = (wordIndex + 1) % words.length; 
-    setTimeout(typeWord, 300);
+    setTimeout(typeWord, 400);
   }
 }
 
