@@ -437,40 +437,111 @@ h2, .section-title {
   font-size: 0.85rem;
   color: var(--accent);
 }
+/* ===== Contact Section ===== */
 #contact {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom right, #1e1624, #2b1d33);
+  color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
 }
 
-.contact-text {
-  color: var(--text-light);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+#contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--highlight);
 }
 
+#contact .contact-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+/* Contact Links */
 .contact-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .contact-item {
-  color: var(--accent);
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .contact-item i {
-  margin-right: 0.5rem;
+  font-size: 1.3rem;
   color: var(--highlight);
 }
 
 .contact-item:hover {
-  color: var(--highlight);
-  transform: scale(1.05);
+  color: var(--accent);
+  letter-spacing: 1px;
 }
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: #2b1d33;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 10px var(--highlight);
+}
+
+.btn-submit {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--highlight);
+  color: #1c1c1e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#formMessage {
+  text-align: center;
+  font-weight: 500;
+}
+
 
 /* ===== Footer ===== */
 footer {
