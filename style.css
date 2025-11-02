@@ -438,9 +438,10 @@ h2, .section-title {
   color: var(--accent);
 }
 /* ===== Contact Section ===== */
+/* ===== Contact Section ===== */
 #contact {
   padding: 5rem 2rem;
-  background: linear-gradient(to bottom right, #1e1624, #2b1d33);
+  background: #1c1c1e; /* نفس لون الخلفية العام للصفحة */
   color: #fff;
   text-align: center;
 }
@@ -488,7 +489,7 @@ h2, .section-title {
 
 /* Contact Form */
 .contact-form {
-  max-width: 600px;
+  max-width: 500px; /* اجعل النموذج أصغر */
   margin: 0 auto;
   text-align: left;
   display: flex;
@@ -502,7 +503,7 @@ h2, .section-title {
   padding: 0.8rem 1rem;
   border-radius: 10px;
   border: 1px solid #555;
-  background: none
+  background: #2b1d33;
   color: #fff;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -520,8 +521,12 @@ h2, .section-title {
   box-shadow: 0 0 10px var(--highlight);
 }
 
+/* Submit Button */
 .btn-submit {
-  padding: 0.8rem 2rem;
+  width: 180px; /* اجعل الزر قصير */
+  margin: 1rem auto; /* تمركز في الوسط */
+  display: block;
+  padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 10px;
   background: var(--highlight);
@@ -540,6 +545,7 @@ h2, .section-title {
 #formMessage {
   text-align: center;
   font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 
