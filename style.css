@@ -502,7 +502,7 @@ h2, .section-title {
   padding: 0.8rem 1rem;
   border-radius: 10px;
   border: 1px solid #555;
-  background: #2b1d33;
+  background: none
   color: #fff;
   font-size: 1rem;
   transition: all 0.3s ease;
