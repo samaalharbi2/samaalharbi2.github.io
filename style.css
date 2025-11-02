@@ -138,6 +138,18 @@ backdrop-filter: blur(10px);
     border-color: transparent;
   }
 }
+.changing-text {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+#dynamic-text {
+  color: var(--accent);
+  font-weight: 600;
+  transition: opacity 0.5s ease;
+}
 
 
 /* ===== Buttons ===== */
