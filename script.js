@@ -18,15 +18,18 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+
 // ===== Global Mouse Light Effect =====
 document.addEventListener("mousemove", (e) => {
   document.body.style.setProperty("--x", `${e.clientX}px`);
   document.body.style.setProperty("--y", `${e.clientY}px`);
 });
 
+
+// ===== Typewriter Effect for Name =====
 const nameElement = document.getElementById("name");
 const fullName = nameElement.textContent;
-nameElement.textContent = ""; // نبدأ من فراغ
+nameElement.textContent = ""; // يبدأ الاسم فاضي
 let index = 0;
 
 function typeName() {
@@ -36,5 +39,20 @@ function typeName() {
     setTimeout(typeName, 150); // سرعة الكتابة
   }
 }
-
 typeName();
+
+
+// ===== Changing Text Animation =====
+const words = ["AI", "Data", "Insight", "Innovation"];
+let i = 0;
+const textElement = document.getElementById("dynamic-text");
+
+setInterval(() => {
+  i = (i + 1) % words.length;
+  textElement.style.opacity = 0;
+  setTimeout(() => {
+    textElement.textContent = words[i];
+    textElement.style.opacity = 1;
+  }, 500);
+}, 2000);
+
