@@ -363,32 +363,32 @@ h2, .section-title {
 .certs-container {
   display: flex;
   flex-direction: column; /* شهادات فوق بعض */
-  gap: 1.5rem; /* المسافة بين الشهادات */
+  gap: 1.5rem; /* نفس المسافة بين timeline-item */
   margin-top: 2rem;
-  max-width: 500px; /* تحدد أقصى عرض */
+  max-width: 500px;
   margin-left: auto;
-  margin-right: auto; /* توسيط كامل الحاوية */
+  margin-right: auto; /* توسيط */
 }
 
 .cert-card {
   display: flex;
   align-items: center;
   background: var(--bg-card);
-  padding: 1rem 1.5rem;
+  padding: 1.8rem; /* نفس padding timeline-item */
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(123, 95, 255, 0.2);
+  box-shadow: 0 0 10px rgba(123, 95, 255, 0.25); /* نفس الظل */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 120px; /* ضبط ارتفاع المستطيل */
+  height: 100px; /* تقريباً نفس ارتفاع timeline-item */
 }
 
 .cert-card:hover {
-  transform: translateX(10px);
-  box-shadow: 0 0 25px #7B5FFF, 0 0 15px #FFB86C;
+  transform: translateY(-8px); /* نفس حركة hover */
+  box-shadow: 0 0 20px #FFB86C, 0 0 30px #7B5FFF;
 }
 
 .cert-logo {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px; /* نفس حجم الصور في timeline-item */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,7 +410,6 @@ h2, .section-title {
   font-size: 0.85rem;
   color: var(--accent);
 }
-
 
 /* ===== Footer ===== */
 footer {
