@@ -473,18 +473,20 @@ h2, .section-title {
     font-size: 1rem;
   }
 
-  form button {
-    background-color: #7B5FFF;
+form button {
+    background-color: var(--highlight); /* بدل #7B5FFF استخدم نفس لون View Project */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+    transition: background 0.3s ease;
+}
 
-  form button:hover {
-    background-color: #6931f9;
-  }
+form button:hover {
+    background-color: #c72d56; /* لون أغمق شوي عند hover */
+}
+
 
   .contact-info p {
     margin: 5px 0;
