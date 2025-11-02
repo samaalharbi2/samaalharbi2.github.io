@@ -362,9 +362,12 @@ h2, .section-title {
 /* ===== Certifications ===== */
 .certs-container {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: column; /* شهادات فوق بعض */
+  gap: 1.5rem; /* المسافة بين الشهادات */
   margin-top: 2rem;
+  max-width: 500px; /* تحدد أقصى عرض */
+  margin-left: auto;
+  margin-right: auto; /* توسيط كامل الحاوية */
 }
 
 .cert-card {
@@ -375,6 +378,7 @@ h2, .section-title {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(123, 95, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 120px; /* ضبط ارتفاع المستطيل */
 }
 
 .cert-card:hover {
@@ -406,6 +410,7 @@ h2, .section-title {
   font-size: 0.85rem;
   color: var(--accent);
 }
+
 
 /* ===== Footer ===== */
 footer {
