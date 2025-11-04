@@ -259,13 +259,13 @@ h2, .section-title {
   box-shadow: 0 0 20px rgba(226, 62, 100, 0.4);
 }
 
-/* تأثير الصورة عند المرور */
+
 .skill:hover img {
   filter: none;
   transform: scale(1.15);
 }
 
-/* ظهور الاسم */
+
 .skill:hover span {
   opacity: 1;
   color: var(--accent);
