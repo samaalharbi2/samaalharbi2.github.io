@@ -614,4 +614,45 @@ footer {
     height: 35px;
   }
 }
+/* ======== Hamburger Menu (Mobile Only) ======== */
+
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: right;
+    margin: 10px 0;
+  }
+
+  nav {
+    position: relative;
+  }
+}
 
