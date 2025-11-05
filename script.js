@@ -95,3 +95,12 @@ typeWord();
       alert('Oops! There was a problem submitting your form.');
     });
   });
+<script>
+  const menu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  menu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
