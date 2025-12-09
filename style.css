@@ -146,6 +146,19 @@ header {
     background-position: 120px 160px, -100px 140px;
   }
 }
+.role-badge-top {
+  width: fit-content;
+  font-size: 0.85rem;
+  background: rgba(124, 58, 237, 0.18);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  color: #dcd9ef;
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin: 12px 0 0 2.5rem;  /* هام: يحركه يسار تحت الهيدر */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.25);
+  letter-spacing: 0.4px;
+}
 
 .hero-container {
   max-width: 1100px;
