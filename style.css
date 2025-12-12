@@ -1,13 +1,13 @@
 /* ===== Root Variables – NEW PALETTE ===== */
 :root {
-  --bg-dark: #020617;         /* خلفية عامة (كحلي غامق جداً) */
-  --bg-card: #020617;         /* كروت شبه نفس الخلفية مع ظل */
-  --text-light: #e5e7eb;      /* نص فاتح مريح */
-  --primary: #38bdf8;         /* أزرق سماوي (أساسي) */
-  --secondary: #6366f1;       /* بنفسجي مزرق */
-  --highlight: #38bdf8;       /* نفس الأساسي عشان التناسق */
-  --accent: #f97316;          /* برتقالي خفيف للأشياء المميزة */
-  --purple: #6366f1;          /* نستخدمه للظل/تفاصيل بسيطة */
+  --bg-dark: #020617;        
+  --bg-card: #020617;         
+  --text-light: #e5e7eb;      
+  --primary: #38bdf8;         
+  --secondary: #6366f1;      
+  --highlight: #38bdf8;       
+  --accent: #f97316;         
+  --purple: #6366f1;          
 }
 
 /* ===== Global ===== */
