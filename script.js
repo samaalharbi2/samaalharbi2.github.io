@@ -103,4 +103,73 @@ typeWord();
     navLinks.classList.toggle('active');
   });
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const starBtn = document.getElementById("starBtn");
+  const starCount = document.getElementById("starCount");
+  const starLeft = document.getElementById("starLeft");
+
+  // إذا الزر مو موجود في الصفحة، لا تسوي شيء
+  if (!starBtn || !starCount || !starLeft) return;
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCr2oaxBtqScoJzf_5HXheYP25E3Hz4z20",
+    authDomain: "sama-portfolio.firebaseapp.com",
+    projectId: "sama-portfolio",
+    storageBucket: "sama-portfolio.firebasestorage.app",
+    messagingSenderId: "687004826142",
+    appId: "1:687004826142:web:35c5219b8431796fa78c0f",
+    measurementId: "G-3P80QKHS3J" 
+  };
+
+  // يمنع خطأ إذا تهيأ Firebase مسبقًا
+  if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+
+  const db = firebase.firestore();
+  const ref = db.collection("site").doc("portfolio");
+
+  const MAX_PER_DAY = 5;
+  const dayKey = new Date().toISOString().slice(0, 10);
+  const storageKey = "portfolio_stars_" + dayKey;
+
+  const getUsed = () => parseInt(localStorage.getItem(storageKey) || "0", 10);
+  const setUsed = (v) => localStorage.setItem(storageKey, String(v));
+
+  const renderLeft = () => {
+    const used = getUsed();
+    const left = Math.max(0, MAX_PER_DAY - used);
+    starLeft.textContent = left > 0 ? `+${left} left` : "Limit reached";
+    starBtn.disabled = left === 0;
+  };
+
+  try {
+    const snap = await ref.get();
+    starCount.textContent = snap.exists ? (snap.data().stars ?? 0) : 0;
+  } catch (e) {
+    console.error(e);
+  }
+
+  renderLeft();
+
+  starBtn.addEventListener("click", async () => {
+    const used = getUsed();
+    if (used >= MAX_PER_DAY) return;
+
+    starBtn.disabled = true;
+    try {
+      await ref.update({
+        stars: firebase.firestore.FieldValue.increment(1),
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+      });
+
+      setUsed(used + 1);
+
+      const snap2 = await ref.get();
+      starCount.textContent = snap2.data().stars ?? 0;
+    } catch (e) {
+      console.error(e);
+    } finally {
+      renderLeft();
+    }
+  });
+});
 
