@@ -45,28 +45,7 @@ section, header, footer {
   position: relative;
   z-index: 1;
 }
-.site-star{
-  position: fixed;
-  top: 110px;      /* تحت الهيدر */
-  right: 24px;     /* يمين الشاشة */
-  z-index: 999999; /* فوق أي شيء */
-}
 
-#starBtn{
-  background: rgba(0,0,0,0.35);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.3);
-  padding: 10px 16px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 16px;
-  backdrop-filter: blur(10px);
-}
-
-/* مهم جدًا عشان ينضغط */
-#starBtn{
-  pointer-events: auto;
-}
 
 /* ===== Navbar ===== */
 header {
