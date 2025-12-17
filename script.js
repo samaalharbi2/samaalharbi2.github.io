@@ -111,5 +111,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
+const menu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (menu) {
+  menu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
 
 
