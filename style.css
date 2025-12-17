@@ -860,3 +860,49 @@ header {
     padding-top: 5rem;
   }
 }
+/* ===== NAVBAR LAYOUT FIX ===== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* اسم يسار – زر يمين */
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+/* ===== Desktop ===== */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.98);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    display: none;
+  }
