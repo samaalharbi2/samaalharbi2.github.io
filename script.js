@@ -96,28 +96,20 @@ typeWord();
     });
   });
 
+// ===== Mobile Menu Toggle =====
 const menu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
-if (menu) {
+if (menu && navLinks) {
   menu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
-}
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
-});
 
 
-const menu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-if (menu) {
-  menu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
   });
 }
-
 
