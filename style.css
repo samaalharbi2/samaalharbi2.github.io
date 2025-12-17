@@ -733,7 +733,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
+  .navbar {
+    flex-direction: row;       
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
   }
+
+  .nav-links {
+    gap: 1rem;
+  }
+}
