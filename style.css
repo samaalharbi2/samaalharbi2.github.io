@@ -1,4 +1,4 @@
- /* ===== Root Variables – NEW PALETTE ===== */
+/* ===== Root Variables – NEW PALETTE ===== */
 :root {
   --bg-dark: #020617;        
   --bg-card: #020617;         
@@ -719,6 +719,15 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* ===== التعديل البسيط: كروت "Why Hire Me" تنزل عمود واحد بالجوال ===== */
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hire-card {
+    width: 100%;
   }
 
   .skills-icons {
