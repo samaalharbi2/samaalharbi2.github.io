@@ -535,7 +535,18 @@ h2, .section-title {
   text-decoration: underline;
   letter-spacing: 0.3px;
 }
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
 
+.project-buttons .demo-link {
+  background: transparent;
+  border: 1px solid currentColor;
+}
 /* ===== Certifications ===== */
 .certs-container {
   display: flex;
