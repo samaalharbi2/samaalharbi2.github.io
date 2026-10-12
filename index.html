@@ -131,71 +131,149 @@ Computer Science graduate passionate about AI, data, and innovation. Completed 5
 <!-- ===== Projects ===== -->
 <section id="projects" class="fade-in">
   <h2>My Featured Projects</h2>
-  <div class="projects-grid">
+  <div class="pj-grid">
 
-    <!-- Project: HAYY -->
-    <div class="project-card">
-      <img src="images/header.jpg" alt="HAYY - Service Requests Data Pipeline">
-      <h3>HAYY | حيّ — Service Requests Pipeline</h3>
-      <p>End-to-end data pipeline and bilingual dashboard for municipal 940 requests, measuring closure speed and whether issues come back after closure.</p>
-      <a href="https://github.com/samaalharbi2/HAYY"
-         class="project-link" target="_blank">
-        View Project →
-      </a>
-    </div>
-
-    <!-- Project: Sanad -->
-    <div class="project-card">
-      <img src="images/sanad.png" alt="Sanad - PDPL Compliance Assistant">
-      <h3>Sanad | سَنَد — PDPL Compliance Assistant</h3>
-      <p>Check your file before you share it. A compliance assistant for Saudi Arabia's Personal Data Protection Law that finds personal data in an organization's files, classifies it by the law's definitions, and explains what the law requires, all on the organization's own machine.</p>
-      <a href="https://github.com/samaalharbi2/Sanad"
-         class="project-link" target="_blank">
-        View Project →
-      </a>
-    </div>
-
-    <!-- Project: AGRONA -->
-    <div class="project-card">
-      <img src="images/Agrona.jpeg" alt="AGRONA - Plant Disease Detection">
-      <h3>AGRONA — Plant Disease Detection</h3>
-      <p>AI-powered tool for detecting plant diseases from leaf photos — fast, simple, and reliable.</p>
-      <div class="project-buttons">
-        <a href="https://github.com/samaalharbi2/AGRONA-Plant-Disease-Detection"
-           class="project-link" target="_blank">
-          View Project →
-        </a>
-        <a href="https://www.youtube.com/watch?v=z6VEwJ91GSA"
-           class="project-link demo-link" target="_blank">
-          Demo →
-        </a>
+    <article class="pj" style="--accent:#3b82f6">
+      <p class="pj-cat">Data Engineering</p>
+      <h3>HAYY <span class="pj-ar">حيّ</span></h3>
+      <p class="pj-desc">End-to-end pipeline and bilingual dashboard for municipal 940 requests. It shows how fast issues are closed and whether they come back.</p>
+      <ul class="pj-tags"><li>BigQuery</li><li>dbt</li><li>Airflow</li><li>Streamlit</li></ul>
+      <div class="pj-foot">
+        <a href="https://github.com/samaalharbi2/HAYY" target="_blank">Code →</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Project: Tamahal -->
-    <div class="project-card">
-      <img src="images/Cars.jpg" alt="Monitoring Vehicles Not Keeping Safe Distances">
-      <h3>Vehicle Safe-Distance Monitoring (تمهّل)</h3>
-      <p>AI system that monitors road safety by spotting cars that don't keep a safe distance and warning drivers.</p>
-      <a href="https://github.com/samaalharbi2/Monitoring-Vehicles-Not-Keeping-Safe-Distances-"
-         class="project-link" target="_blank">
-        View Project →
-      </a>
-    </div>
+    <article class="pj" style="--accent:#10b981">
+      <p class="pj-cat">Data Privacy</p>
+      <h3>Sanad <span class="pj-ar">سَنَد</span></h3>
+      <p class="pj-desc">Compliance assistant for Saudi PDPL. It finds personal data in an organization's files, classifies it and explains what the law requires, all on the organization's own machine.</p>
+      <ul class="pj-tags"><li>PDPL</li><li>Data Classification</li><li>On-premise</li></ul>
+      <div class="pj-foot">
+        <a href="https://github.com/samaalharbi2/Sanad" target="_blank">Code →</a>
+      </div>
+    </article>
 
-    <!-- Project: Customer Review -->
-    <div class="project-card">
-      <img src="images/Customer.jpg" alt="Customer Review Classification">
+    <article class="pj" style="--accent:#84cc16">
+      <p class="pj-cat">Computer Vision</p>
+      <h3>AGRONA</h3>
+      <p class="pj-desc">Detects plant diseases from a photo of a leaf, fast and simple for farmers.</p>
+      <ul class="pj-tags"><li>Deep Learning</li><li>Image Classification</li></ul>
+      <div class="pj-foot">
+        <span class="pj-role">Team Lead</span>
+        <a href="https://github.com/samaalharbi2/AGRONA-Plant-Disease-Detection" target="_blank">Code →</a>
+        <a href="https://www.youtube.com/watch?v=z6VEwJ91GSA" target="_blank">Demo →</a>
+      </div>
+    </article>
+
+    <article class="pj" style="--accent:#f59e0b">
+      <p class="pj-cat">Computer Vision</p>
+      <h3>Tamahal <span class="pj-ar">تمهّل</span></h3>
+      <p class="pj-desc">Spots cars that don't keep a safe distance on the road and warns drivers.</p>
+      <ul class="pj-tags"><li>Object Detection</li><li>Road Safety</li></ul>
+      <div class="pj-foot">
+        <a href="https://github.com/samaalharbi2/Monitoring-Vehicles-Not-Keeping-Safe-Distances-" target="_blank">Code →</a>
+      </div>
+    </article>
+
+    <article class="pj" style="--accent:#a855f7">
+      <p class="pj-cat">NLP</p>
       <h3>Customer Review Classification</h3>
-      <p>NLP-based classifier predicting whether a review is positive or negative using deep learning.</p>
-      <a href="https://github.com/samaalharbi2/Customer-Review-Classification"
-         class="project-link" target="_blank">
-        View Project →
-      </a>
-    </div>
+      <p class="pj-desc">Classifies customer reviews as positive or negative.</p>
+      <ul class="pj-tags"><li>Deep Learning</li><li>Text Classification</li></ul>
+      <div class="pj-foot">
+        <a href="https://github.com/samaalharbi2/Customer-Review-Classification" target="_blank">Code →</a>
+      </div>
+    </article>
 
   </div>
 </section>
+
+<style>
+  .pj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 22px;
+  }
+  .pj {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 24px 22px;
+    border-radius: 16px;
+    background: rgba(127, 127, 127, 0.07);
+    border: 1px solid rgba(127, 127, 127, 0.18);
+    border-top: 4px solid var(--accent);
+    text-align: left;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .pj:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 14px 30px -12px var(--accent);
+  }
+  .pj-cat {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .pj h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+  }
+  .pj-ar {
+    font-weight: 500;
+    opacity: .6;
+    margin-left: 6px;
+  }
+  .pj-desc {
+    margin: 0 0 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: .85;
+    flex-grow: 1;
+  }
+  .pj-tags {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .pj-tags li {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(127, 127, 127, 0.3);
+  }
+  .pj-foot {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .pj-foot a {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--accent);
+  }
+  .pj-foot a:hover { text-decoration: underline; }
+  .pj-role {
+    margin-right: auto;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--accent);
+  }
+</style>
+    
   <!-- ===== Education ===== -->
   <section id="education" class="fade-in">
     <h2>Education</h2>
